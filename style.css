@@ -1,0 +1,193 @@
+@import url('https://googleapis.com');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #25252b;
+    overflow: hidden;
+
+    background: linear-gradient(45deg, #ff004433, #ff0044c5);
+    animation:alternate-reverse;
+    transform: rotateX('45');
+}
+
+/*  */
+.container {
+    position: relative;
+    width: 750px;
+    height: 450px;
+    background: #1e1e22;
+    border: 2px solid #ff0044;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #ff0044;
+    overflow: hidden;
+}
+
+/* flip card */
+.container .sliding-bg-card {
+    position: absolute;
+    bottom: 280px; 
+    left: 50%;
+    width: 1000px; 
+    height: 800px;
+    background: linear-gradient(45deg, #25252b, #ff0044);
+    border-left: 4px solid #ff0044; 
+    transform-origin: center bottom; 
+    
+    /* default val */
+    transform: translateX(-30%) rotate(135deg);
+    
+    transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+    z-index: 2;
+}
+
+/* active state */
+.container.active .sliding-bg-card {
+    /* mirror ratio */
+    transform: translateX(-70%) rotate(-135deg);
+}
+
+
+
+/*content*/
+.form-box {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    z-index: 5;
+    transition: opacity 0.4s ease-in-out, pointer-events 0.3s;
+}
+
+/* Default form */
+.login-box {
+    left: 0;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.register-box {
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Swap */
+.container.active .login-box {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container.active .register-box {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* form content*/
+.form-box h2 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-box .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    padding-right: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    transition: 0.3s;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-bottom-color: #ff0044;
+}
+
+.input-box label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+    color: #ff0044;
+    font-size: 13px;
+}
+
+/*btn*/
+.btn {
+    width: 100%;
+    height: 45px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid #ff0044;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #ff0044;
+    box-shadow: 0 0 15px #ff0044;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.regi-link {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.regi-link a {
+    color: #ff0044;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.regi-link a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 8px #ff0044;
+}
