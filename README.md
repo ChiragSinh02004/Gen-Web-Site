@@ -10,11 +10,12 @@ A beautifully crafted, modern, and interactive Auth interface made with ❤️. 
 
 ## 📊 Project Stats
 
-![Repo Size](https://shields.io)
-![Last Commit](https://shields.io)
-![License](https://shields.io)
-![Stars](https://shields.io)
-![Contributors](https://shields.io)
+![Repo Size](https://img.shields.io/github/repo-size/chiragsinh02004/Gen-Web-Site)
+![Last Commit](https://img.shields.io/github/last-commit/chiragsinh02004/Gen-Web-Site)
+![License](https://img.shields.io/github/license/chiragsinh02004/Gen-Web-Site?style=social)
+![Stars](https://img.shields.io/github/stars/chiragsinh02004/Gen-Web-site?style=social)
+![Contributors](https://img.shields.io/github/contributors/chiragsinh02004/Gen-Web-Site)
+
 ![Made with Love](https://img.shields.io/badge/made%20with-love-red)
 ![GitHub Pages](https://img.shields.io/badge/hosted%20on-GitHub%20Pages-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
