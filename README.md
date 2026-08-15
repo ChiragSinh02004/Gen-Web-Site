@@ -16,7 +16,7 @@ A beautifully crafted, modern, and interactive Auth interface made with ❤️. 
 ![Stars](https://img.shields.io/github/stars/chiragsinh02004/Gen-Web-site?style=social)
 ![Contributors](https://img.shields.io/github/contributors/chiragsinh02004/Gen-Web-Site)
 
-![Made with Love](https://img.shields.io/badge/made%20with-mind-red)
+![Made with Mind](https://img.shields.io/badge/made%20with-mind-red)
 ![GitHub Pages](https://img.shields.io/badge/hosted%20on-GitHub%20Pages-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
