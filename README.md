@@ -59,7 +59,7 @@ A beautifully crafted, modern, and interactive Auth interface made with ❤️. 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://chiragsinh02004.github.io/Gen-Web-Site/
+   git clone https://chiragsinh02004.github.io/Gen-Web-Site
    ```
 2. **Navigate to the project folder:**
    ```bash
